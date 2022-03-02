@@ -5,7 +5,7 @@ metadata:
 spec:
   type: NodePort
   selector:
-    app: django
+    app: django_demo
   ports:
   - port: 8000
     protocol: TCP
