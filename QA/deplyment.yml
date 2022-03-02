@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: django_demo
+  name: django
 spec:
   selector:
     matchLabels:
@@ -13,7 +13,7 @@ spec:
         app: django
     spec:
       containers:
-      - name: django_demo
+      - name: django
         image: srinaths119/django:22
         ports:
         - containerPort: 8000
